@@ -1,0 +1,34 @@
+{
+  "name": "account_microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test-init": "node ./node_modules/jasmine/bin/jasmine.js init",
+    "test": "node ./node_modules/jasmine/bin/jasmine.js"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/fab_poc/microservices/account_microservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.1",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.4.2",
+    "grpc": "^1.22.2",
+    "mongoose": "^5.6.9",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  }
+}

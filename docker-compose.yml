@@ -1,0 +1,15 @@
+version: "2"
+services:
+  web:
+    image: compose_accounts
+    build: .
+    ports:
+      - "2007:2007"
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    volumes:
+      - /data/mongodb/db:/data/db
+    ports:
+      - "27017:27017"
